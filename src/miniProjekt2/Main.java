@@ -39,7 +39,7 @@ public class Main {
 						break;
 					case 2:
 						if (p2.getProdRemain() > 0) {
-							c.addToCart(1, p.getProdCost());
+							c.addToCart(1, p2.getProdCost());
 						}
 						else {
 							System.out.println("Varan är tyärr slut, välj en annan eller avluta");
@@ -48,7 +48,7 @@ public class Main {
 						break;
 					case 3:
 						if (dp.getProdRemain() > 0) {
-							c.addToCart(1, dp.getProdCost());
+							c.addToCart(1, dp.discountedCost());
 						}
 						else {
 							System.out.println("Varan är tyärr slut, välj en annan eller avluta och betala!");
